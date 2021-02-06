@@ -1,14 +1,10 @@
-# Welcome to your CDK TypeScript project!
+# Test Lambda microservice using CDK to deploy and nest js as the framework!
 
-This is a blank project for TypeScript development with CDK.
-
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## Make sure you have the cdk tool installed globally
 
 ## Useful commands
 
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+- cd into the lambda/api folder and run `npm i && npm run build`
+- then in the root of the project run `cdk deploy`
+- once deployed yo will be given the api gateway url . i.e `https://21g57kgzfk.execute-api.eu-west-1.amazonaws.com/prod/`. add api/ onto the end and then hit the get, put and post endpoints
+- `cdk destroy` to strip down the poc ( IMPORTANT SO YOU DONT INCUR ANY CHARGES)
